@@ -9,6 +9,15 @@ element{
     background-color: var(--main-bg-color);
 }
 
+body,
+html {
+    font-family: 'Open-Sans-regular';
+    font-size: 16px;
+    line-height: normal;
+    color: #646464;
+}
+
+/****** MENU ******/
 nav.navbar.navbar-fixed-top{
   background-color: #363636; 
   min-height: 90px;
@@ -74,7 +83,27 @@ nav .navbar-toggle .icon-bar{
   background-color: #f6faff;
 }
 
+/****** Fooldal ******/
+div#page-index > div.splash-block{
+  height: 370px;
+  background-image: url(../img/fokep1.jpg);
+}
 
+.splash-block {
+    width: 100%;
+    z-index: -1;
+    /*background-position: center center;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: uppercase;
+}
+
+.block{
+  padding: 105px 0px 105px 0px;
+}
+
+/****** Media queries ******/
 @media (min-width: 768px){
   .nav.navbar-nav.navbar-right{
     margin-top: 36px;
