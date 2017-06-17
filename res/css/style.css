@@ -9,12 +9,114 @@ element{
     background-color: var(--main-bg-color);
 }
 
+/******* Common stuff ******/
 body,
 html {
     font-family: 'Open-Sans-regular';
     font-size: 16px;
-    line-height: normal;
+    line-height: 1.8em;
     color: #646464;
+    background-color: #fcfcfc;
+}
+
+.text-title{
+  font-size: 150%;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.text-subtitle{
+  font-size: 150%;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 30px;
+  text-transform: none;
+}
+.text-normal{
+
+}
+.text-blue{
+  color: #4676be;
+}
+.text-white{
+  color: #fcfcfc;
+}
+.bg-blue{
+  background-color: #4676be; 
+}
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.margint-30{
+  margin-top: 30px;
+}
+.btn {
+    /*border: 2px solid transparent;*/
+    border-radius: 0px;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 40px 6px 40px;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+/******* Buttons ******/
+.btn-blue {
+  background-color: #115788;
+}
+.btn-dark{
+  background-color: #424242;
+}
+.btn-blue:hover {
+    border-color: #115788;
+    background-color: #fcfcfc;
+    color: #115788;
+}
+.btn-dark:hover {
+    border-color: #424242;
+    background-color: #fcfcfc;
+    color: #424242;
+}
+.btn-blue:visited,
+.btn-blue:focus,
+.btn-dark:visited,
+.btn-dark:focus {
+    color: #fcfcfc;
+}
+.btn-dark:focus:hover {
+    color: #424242;
+}
+
+/****** Hexagon ******/
+.hexagon {
+  position: absolute;
+  width: 410px; 
+  height: 236.71px;
+  background-color: rgba(72, 120, 191, 0.5);
+  margin: 118.36px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 205px solid transparent;
+  border-right: 205px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 118.36px solid rgba(72, 120, 191, 0.5);
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 118.36px solid rgba(72, 120, 191, 0.5);
 }
 
 /****** MENU ******/
@@ -24,13 +126,13 @@ nav.navbar.navbar-fixed-top{
 }
 
 ul.navbar-nav.navbar-right li a{
-  font-size: 18px; 
   color: #f6faff;
-  text-transform: uppercase; 
-  padding-right: 0;
-  padding-left: 0;
+  font-size: 18px; 
   margin-right: 15px;
   margin-left: 15px;
+  padding-right: 0;
+  padding-left: 0;
+  text-transform: uppercase; 
 }
 
 ul.navbar-nav.navbar-right li.active>a{
@@ -83,7 +185,7 @@ nav .navbar-toggle .icon-bar{
   background-color: #f6faff;
 }
 
-/****** Fooldal ******/
+/****** Index ******/
 div#page-index > div.splash-block{
   height: 370px;
   background-image: url(../img/fokep1.jpg);
@@ -102,6 +204,67 @@ div#page-index > div.splash-block{
 .block{
   padding: 105px 0px 105px 0px;
 }
+
+#page-index #block2{
+  background: url(../img/fokep2.png) no-repeat center center;
+  background-size: cover;
+  height: 855px;
+}
+
+#page-index #block2>div>p{
+  margin-bottom: 105px;
+}
+
+#page-index #block2 .hexagon{
+    left: -154px;
+    top: 63px;
+}
+
+div.text-box-cut {
+    float: right;
+    height: 450px;
+    position: relative;
+    width: 66%;
+}
+/*
+div.overlay-text-box:after {
+    content: '';
+    position: absolute;
+    left: -350px;
+    margin-top: -67px;
+    width: 0;
+    height: 0;
+    border-top: solid 225px transparent;
+    border-left: solid 225px transparent;
+    border-right: solid 125px #4676be;
+    border-bottom: solid 225px transparent;
+}
+*/
+div.overlay-text-box{
+  padding: 50px 0 50px 0;
+}
+
+#cornered {
+    width: 176px;
+    height: 0px;
+    border-bottom: 40px solid red;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+#maina {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 0 8px;
+}
+#triangle1{
+  position: absolute;
+    top: 0;
+    left: -78px;
+    height: 344px;
+}
+
+
 
 /****** Media queries ******/
 @media (min-width: 768px){
