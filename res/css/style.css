@@ -42,6 +42,28 @@ html {
 .bg-blue{
   background-color: #4676be; 
 }
+.bg-light-gray{
+  background-color: #d0cdc7;
+}
+.bg-light-blue{
+  background-color: #b7d4ff;
+}
+.bg-dark-gray{
+  background-color: #424242;
+}/*
+.bg-right-blue{
+  background: linear-gradient(90deg, transparent 50%, #4676be 50%);
+}
+.bg-right-light-blue{
+  background: linear-gradient(90deg, transparent 50%, #b7d4ff 50%);
+}
+.bg-left-light-gray{
+   background: linear-gradient(90deg, #d0cdc7 50%, transparent 50%);
+}
+.bg-left-dark-gray{
+  background: linear-gradient(90deg, #424242 50%, transparent 50%);
+}
+*/
 .absolute{
   position: absolute;
 }
@@ -62,15 +84,15 @@ html {
     transition: all 0.2s ease-in-out 0s;
 }
 .btn-blue {
-  background-color: #115788;
+  background-color: #4676be;
 }
 .btn-dark{
   background-color: #424242;
 }
 .btn-blue:hover {
-    border-color: #115788;
+    border-color: #4676be;
     background-color: #fcfcfc;
-    color: #115788;
+    color: #4676be;
 }
 .btn-dark:hover {
     border-color: #424242;
@@ -86,6 +108,10 @@ html {
 .btn-dark:focus:hover {
     color: #424242;
 }
+.btn-blue:focus:hover {
+    color: #4676be;
+}
+
 /****** Truncate ******/
 /* styles for '...' */ 
 .block-with-text {
@@ -128,8 +154,23 @@ html {
   /* bg color = bg color under block */
   background: #4676be;
 }
+.block-with-text-blue:after{
+    background: #4676be;
+}
+.block-with-text-light-blue:after{
+    background: #b7d4ff;
+}
+.block-with-text-light-gray:after{
+    background: #d0cdc7;
+}
+.block-with-text-dark-gray:after{
+    background: #424242;
+}
 /****** Hexagon ******/
 .hexagon {
+  /*visibility: hidden;*/
+  display: none;
+  z-index: 1;
   position: absolute;
   width: 410px; 
   height: 236.71px;
@@ -155,6 +196,23 @@ html {
   top: 100%;
   width: 0;
   border-top: 118.36px solid rgba(72, 120, 191, 0.5);
+}
+
+.hexagon-on-left{
+    /*left: -154px;
+    top: 63px;*/
+    right: -224px;
+    top: 68px;
+}
+.hexagon-on-right{
+    /*right: -154px;
+    top: 63px;*/
+    right: -186px;
+    top: 68px;
+}
+.hexagon-container{
+  position: relative; 
+  float: left;
 }
 
 /****** MENU ******/
@@ -246,6 +304,7 @@ div#page-index > div.splash-block{
 #page-index #block2{
   background: url(../img/fokep2.png) no-repeat center center;
   background-size: cover;
+  background-attachment: fixed;
   height: 855px;
 }
 
@@ -253,61 +312,126 @@ div#page-index > div.splash-block{
   margin-bottom: 105px;
 }
 
-#page-index #block2 .hexagon{
-    left: -154px;
-    top: 63px;
-}
-
-div.text-box-cut {
-    float: right;
-    height: 450px;
-    position: relative;
-    width: 66%;
-}
-/*
-div.overlay-text-box:after {
-    content: '';
-    position: absolute;
-    left: -350px;
-    margin-top: -67px;
-    width: 0;
-    height: 0;
-    border-top: solid 225px transparent;
-    border-left: solid 225px transparent;
-    border-right: solid 125px #4676be;
-    border-bottom: solid 225px transparent;
-}
-*/
 div.overlay-text-box{
+  z-index:  10;
   padding: 50px 0 50px 0;
 }
 
-#cornered {
-    width: 176px;
-    height: 0px;
-    border-bottom: 40px solid red;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-}
-#maina {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    padding: 0 8px;
-}
-#triangle1{
-  position: absolute;
-    top: 0;
-    left: -78px;
-    height: 344px;
+#page-index #block3{
+  background: url(../img/fokep3.jpg) no-repeat center center;
+  background-size: cover;
+  height: 647px;
 }
 
+#page-index #block4{
+  background: url(../img/fokep4.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 647px;
+}
+
+
+#page-index #block5{
+  background: url(../img/fokep5.jpg) no-repeat center center;
+  background-size: cover;
+  height: 647px;
+}
+
+footer{
+  padding: 70px 0 70px 0;
+}
+
+.corner {
+    /*width: 100px;
+    background-color: green;
+    margin: 10px;*/
+    /*visibility: hidden;*/
+    position: relative;
+}
+.corner:after, .corner:before {
+    content: "";
+    position: absolute;
+    /*visibility: hidden;*/
+    display: none;
+    /*left: 100%;*/
+    width: 106px;
+    height: 50%;
+}
+.corner-on-right:before, .corner-on-right:after{
+    left: 100%;
+}
+.corner-on-left:before, .corner-on-left:after{
+    right: 100%;
+}
+.corner-on-right-light-gray:before {
+    top: 0px;
+    left: 100%;
+    background: linear-gradient(to top right, #d0cdc7 50%, transparent 51%);
+}
+.corner-on-right-light-gray:after {
+    bottom: 0px;
+    left: 100%;
+    background: linear-gradient(to bottom right, #d0cdc7 50%, transparent 51%);
+}
+.corner-on-right-dark-gray:before {
+    top: 0px;
+    left: 100%;
+    background: linear-gradient(to top right, #424242 50%, transparent 51%);
+}
+.corner-on-right-dark-gray:after {
+    bottom: 0px;
+    left: 100%;
+    background: linear-gradient(to bottom right, #424242 50%, transparent 51%);
+}
+.corner-on-left-blue:before{
+    top: 0px;
+    right: 100%;
+    background: linear-gradient(to bottom right, transparent 50%, #4676be 51%);
+}
+.corner-on-left-blue:after{
+    bottom: 0px;
+    right: 100%;
+    background: linear-gradient(to top right, transparent 50%, #4676be 51%);
+}
+.corner-on-left-light-blue:before{
+    top: 0px;
+    right: 100%;
+    background: linear-gradient(to bottom right, transparent 50%, #b7d4ff 51%);
+}
+.corner-on-left-light-blue:after{
+    bottom: 0px;
+    right: 100%;
+    background: linear-gradient(to top right, transparent 50%, #b7d4ff 51%);
+}
 
 
 /****** Media queries ******/
 @media (min-width: 768px){
   .nav.navbar-nav.navbar-right{
     margin-top: 36px;
+  }
+}
+
+@media (min-width: 992px){
+  .hexagon{
+    /*visibility: visible;*/
+    display: block;
+  }
+  .corner:after, .corner:before{
+    /*visibility: visible;*/
+    display: block;
+  }
+  .bg-right-blue{
+    background: linear-gradient(90deg, transparent 50%, #4676be 50%);
+  }
+  .bg-right-light-blue{
+    background: linear-gradient(90deg, transparent 50%, #b7d4ff 50%);
+  }
+  .bg-left-light-gray{
+     background: linear-gradient(90deg, #d0cdc7 50%, transparent 50%);
+  }
+  .bg-left-dark-gray{
+    background: linear-gradient(90deg, #424242 50%, transparent 50%);
   }
 }
 
