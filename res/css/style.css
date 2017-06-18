@@ -33,9 +33,6 @@ html {
   margin-bottom: 30px;
   text-transform: none;
 }
-.text-normal{
-
-}
 .text-blue{
   color: #4676be;
 }
@@ -54,6 +51,8 @@ html {
 .margint-30{
   margin-top: 30px;
 }
+
+/******* Buttons ******/
 .btn {
     /*border: 2px solid transparent;*/
     border-radius: 0px;
@@ -62,8 +61,6 @@ html {
     padding: 6px 40px 6px 40px;
     transition: all 0.2s ease-in-out 0s;
 }
-
-/******* Buttons ******/
 .btn-blue {
   background-color: #115788;
 }
@@ -89,7 +86,48 @@ html {
 .btn-dark:focus:hover {
     color: #424242;
 }
-
+/****** Truncate ******/
+/* styles for '...' */ 
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.8em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 12.6em; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 2em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: #4676be;
+}
 /****** Hexagon ******/
 .hexagon {
   position: absolute;
