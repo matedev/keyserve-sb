@@ -35,10 +35,10 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#">Bevezető<span class="sr-only">(current)</span></a></li>
+              <li class="active"><a href="index.php">Bevezető<span class="sr-only">(current)</span></a></li>
               <li class=""><a href="#">Szolgáltatások</a></li>
               <li><a href="#" class="hvr-underline-reveal">Partnerek</a></li>
-              <li><a href="#">Kapcsolat</a></li>
+              <li><a href="contact.php">Kapcsolat</a></li>
           </ul>
           </div><!-- /.navbar-collapse -->
       </div>
