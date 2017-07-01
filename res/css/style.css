@@ -10,6 +10,13 @@ element{
 }
 
 /******* Common stuff ******/
+html{
+  height: 100%;
+}
+body{
+  position: relative;
+  min-height: 100%;
+}
 body,
 html {
     font-family: 'Open-Sans-regular';
@@ -267,6 +274,10 @@ nav .navbar-toggle .icon-bar{
 }
 
 /****** Index ******/
+.content-main{
+  padding-bottom: 90px;
+  padding-top: 86px;
+}
 div#page-index > div.splash-block{
   height: 370px;
   background-image: url(../img/splash1.jpg);
@@ -389,6 +400,10 @@ div.overlay-text-box{
 /****** Footer ******/
 footer{
   padding: 30px 0 30px 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 footer small{
   font-size: 70%;
@@ -415,7 +430,7 @@ footer img.img-responsive{
     display: block;
   }
   footer{
-    padding: 10px 0 10px 0;
+    padding: 20px 0 10px 0;
   }
 }
 
@@ -444,7 +459,7 @@ footer img.img-responsive{
   footer div.copyright>small{
     position: absolute;
     left: 50%;
-    transform: translate(-50%,30%);
+    transform: translate(-50%,5%);
     /*line-height: 53px;*/
   }
 }

@@ -13,6 +13,20 @@
             szolgáltatás-portfóliónk, megrendelői és partneri kapcsolataink, szervezeti fejlődésünk és növekedési pályánk pontosan az induláskor megfogalmazott elképzeléseink szerint alakul. <br/>
             A prémium tanácsadási minőségre, a kölcsönös bizalomra és a közös gondolkodásra épülő filozófiánk helyességét, a másik oldalról az eszközalapú projektekben leszállított megoldások színvonalát és értékeit megrendelői kapcsolataink kialakulásán és fejlődésén keresztül is beigazolódni látjuk.
           </p>
+<!--div class="outer">
+<div id="cornered">It's possible to put text up here, too
+    but if you want it to follow the slant you have to stack
+    several of these.
+</div>
+<div id="maina">Hello hello hello hello
+hello hello hello hello hello
+</div>
+</div-->
+<!--div id="asdf">
+<svg height="500" width="250">
+  <polygon points="0,250 100,0 100,500" style="fill:lime;stroke:purple;stroke-width:0" />
+</svg>
+</div-->
         </div>
       </div>
 
@@ -111,6 +125,5 @@
           </div>    
         </div>
       </div>
-      
-    </div>
+
 <?php include 'footer.php';?>
