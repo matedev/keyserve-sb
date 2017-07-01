@@ -7,7 +7,10 @@
   <title>Keyserve</title>
 
     <!-- Bootstrap -->
-    <link href="vendors/bootstrap.min.css" rel="stylesheet">
+    <link href="vendors/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="vendors/owl/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="vendors/owl/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="vendors/fa/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="res/css/style.css" rel="stylesheet" type="text/css">
     <link href="res/css/fonts.css" rel="stylesheet" type="text/css">
 

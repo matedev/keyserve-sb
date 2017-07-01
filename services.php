@@ -43,6 +43,8 @@ tanácsadóink sokoldalú tapasztalata és az ügyfél felé való elkötelezett
                 </div>                
               </div>
             </div>
+            </div>
+            <div class="row">
             <div class="col-md-6">
               <div class="service-box">
                 <div class="circle circle-100 bg-blue"></div>
@@ -63,7 +65,8 @@ is veszünk a sikeres módszertanok magyarországi meghonosításában és elter
 és tapasztalataikat.</p>
                 </div>                
               </div>
-            </div>            
+            </div>   
+            </div>         
           </div>
         </div>
       </div>
