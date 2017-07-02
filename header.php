@@ -32,13 +32,13 @@
               <span></span>
               <span></span>
           </button>
-          <a class="navbar-brand" href="#"><img src="res/img/logo.png" height="53px"></img></a>
+          <a class="navbar-brand" href="index.php"><img src="res/img/logo.png" height="53px"></img></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index.php">Bevezető<span class="sr-only">(current)</span></a></li>
+              <li class=""><a href="index.php">Bevezető<span class="sr-only">(current)</span></a></li>
               <li class=""><a href="services.php">Szolgáltatások</a></li>
               <li><a href="partners.php" class="hvr-underline-reveal">Partnerek</a></li>
               <li><a href="contact.php">Kapcsolat</a></li>

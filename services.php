@@ -24,7 +24,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="service-box">
-                <div class="circle circle-100 bg-blue"></div> 
+                <div class="circle circle-100 bizalom bg-blue"></div> 
                 <div class="service-text">
                   <h3 class="text-title text-blue">Bizalom</h3>
                   <p>A megrendelő szervezetének működése, a vezetők 
@@ -35,7 +35,7 @@ együttműködés bázisát.</p>
             </div>
             <div class="col-md-6">
               <div class="service-box">
-                <div class="circle circle-100 bg-blue"></div>
+                <div class="circle circle-100 minoseg bg-blue"></div>
                 <div class="service-text">
                   <h3 class="text-title text-blue">Prémium minőség</h3>
                   <p>A szakértelem mellett szilárd értékrend, 
@@ -47,7 +47,7 @@ tanácsadóink sokoldalú tapasztalata és az ügyfél felé való elkötelezett
             <div class="row">
             <div class="col-md-6">
               <div class="service-box">
-                <div class="circle circle-100 bg-blue"></div>
+                <div class="circle circle-100 ajanlas bg-blue"></div>
                 <div class="service-text">
                   <h3 class="text-title text-blue">Best practice ajánlások</h3>
                   <p>Figyelemmel kísérjük a szakterületünkre vonatkozó 
@@ -58,7 +58,7 @@ is veszünk a sikeres módszertanok magyarországi meghonosításában és elter
             </div>
             <div class="col-md-6">
               <div class="service-box">
-                <div class="circle circle-100 bg-blue"></div>
+                <div class="circle circle-100 partner bg-blue"></div>
                 <div class="service-text">
                   <h3 class="text-title text-blue">Professzionális partnerek</h3>
                   <p>Csak professzionális partnerekkel dolgozunk,akik a közelmúlt jelentős magyarországi informatikai projektjeiből hozták tudásukat 

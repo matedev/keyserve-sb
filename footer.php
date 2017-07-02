@@ -23,5 +23,6 @@
     <script src="vendors/bootstrap.min.js"></script>
     <script src="vendors/owl/owl.carousel.min.js"></script>
     <script src="res/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWIHvV0JQ9Lb8ACkaR7TWVuxVADip8tOE&callback=initMap"></script>
   </body>
 </html>

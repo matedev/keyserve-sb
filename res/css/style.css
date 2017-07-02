@@ -80,7 +80,9 @@ html {
 .margint-30{
   margin-top: 30px;
 }
-
+.no-padding{
+  padding: 0;
+}
 /******* Buttons ******/
 .btn {
     /*border: 2px solid transparent;*/
@@ -277,6 +279,7 @@ nav .navbar-toggle .icon-bar{
 .content-main{
   padding-bottom: 90px;
   padding-top: 86px;
+  overflow: hidden;
 }
 div.splash-block{
   background-image: url(../img/splash1.jpg);
@@ -428,11 +431,27 @@ div.overlay-text-box{
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #4676be url(../img/font-awesome_key.png) no-repeat center center;
-  background-size: 56px;
-
 }
 
+#page-services .circle.bizalom{
+  background: #4676be url(../img/icon_bizalom.svg) no-repeat center center;
+  background-size: 80px;
+}
+
+#page-services .circle.minoseg{
+  background: #4676be url(../img/icon_minoseg.svg) no-repeat center center;
+  background-size: 60px;
+}
+
+#page-services .circle.ajanlas{
+  background: #4676be url(../img/icon_ajanlasok.svg) no-repeat center center;
+  background-size: 60px;
+}
+
+#page-services .circle.partner{
+  background: #4676be url(../img/icon_partnerek.svg) no-repeat center center;
+  background-size: 80px;
+}
 #page-services .service-text{
   padding: 70px 25px 25px 25px;
   text-align: center;
@@ -459,6 +478,61 @@ div.overlay-text-box{
 .owl-next {
     right: -50px;
     
+}
+
+/****** Contact ******/
+#page-contact form{
+  font-family: "Open-Sans-light";
+  color: #f5f5f5;
+}
+
+#page-contact form label{
+  font-weight: 100;
+}
+
+#page-contact input, #page-contact textarea{
+  border: none;
+  border-radius: 0;
+}
+
+#page-contact .contact-info-box p{
+  font-family: "Open-Sans-semibold";
+  font-size: 130%;
+  margin-bottom: 10px;
+}
+
+#page-contact .contact-info-box p:first-of-type{
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#page-contact .contact-info-box p:last-of-type{
+  margin-top: 50px;
+}
+
+#page-contact .contact-info-box ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+#google-map-overlay {
+    width : 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    opacity: 0.5;
+    top: 0px; 
+    left: 0px; 
+    z-index: 99;
+}
+
+#page-contact .gm-style-iw{
+  text-align: center;
+}
+
+/* hide info window close button*/
+#page-contact .gm-style-iw + div {
+  display: none;
 }
 
 /****** Footer ******/
@@ -509,10 +583,10 @@ footer img.img-responsive{
     display: none;
   }
   #page-index #block2{
-    height: 855px;
+    min-height: 855px;
   }
   #block3, #block4, #block5{
-    height: 647px;
+    min-height: 647px;
   }
   .container-fluid {
     width: inherit;
@@ -525,6 +599,12 @@ footer img.img-responsive{
     left: 50%;
     transform: translate(-50%,5%);
     /*line-height: 53px;*/
+  }
+  #page-contact .contact-info-box p:last-of-type{
+    margin-top: 85px;
+  }
+  .fading-box{
+    min-height: 647px;
   }
 }
 
@@ -671,4 +751,21 @@ footer img.img-responsive{
   top: 18px;
   width: 0%;
   left: 50%;
+}
+
+/** FADING **/
+
+#page-index .fading-box .block{
+  overflow: hidden;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.animation.translate{
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
